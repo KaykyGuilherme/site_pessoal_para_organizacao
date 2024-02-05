@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --cor__1: #7B797A;
+    --cor__2: #4E4C4D;
+    --cor__3: #231F20;
+    --cor__4: #191718;
+    --cor__5: #090708;
+
+    --home__1: #002D64;
+    --home__2: #016CBE;
+    --home__3: #0F9EEA;
+    --home__4: #30B7EE;
+    --home__5: #6AD2F5;
+
+    --estudos__1: #170052;
+    --estudos__2: #1F0372;
+    --estudos__3: #280792;
+    --estudos__4: #310CB4;
+    --estudos__5: #3A10D6;
+
+    --academia__1: #253529;
+    --academia__2: #48654E;
+    --academia__3: #8AA88A;
+    --academia__4: #C2CFB4;
+    --academia__5: #E4E6DA;
+
+    --cor__letra: #eee;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-family: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}

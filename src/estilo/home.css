@@ -1,0 +1,82 @@
+.nav__active a{
+    color: var(--home__5);
+    text-shadow: 0 0 .5rem var(--home__5);
+}
+
+.headline__baner--gif{
+    padding-top: 30rem;
+    background: url("../img/home/wallpaper__background.gif") 
+    no-repeat
+    center/cover;
+    height: 40vh;
+    position: relative;
+    box-shadow: inset 0 0 1rem rgb(0 0 0 / 1);
+    
+}
+
+.relogio{
+    background: var(--cor__5);
+    opacity: .9;
+    width: 10rem; height: 5rem;
+    color: var(--cor__letra);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; right: 50%; left: 50%;
+    display: flex;
+    align-items: center; justify-content: center;
+    font-size: 5rem;
+    font-family: 'Cute Font';
+}
+
+.minha__foto{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -10rem;
+    position: absolute;
+    border: 4px solid var(--cor__5);
+    width: 10rem; height: 10rem;
+    background: url('../img/eu/minha__foto.jpg') 
+    no-repeat
+    top/cover;
+    border-radius: 50%;
+    box-shadow: inset 0 0 1rem rgb(0 0 0 / .5);
+}
+
+.headline__infos{
+    margin-top: 5.5rem;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center; justify-content: center;
+}
+
+.container__date{
+    display: grid;
+    align-items: center; justify-content: center;
+}
+
+.date--text{
+    text-align: center;
+    color: #eee;
+    text-transform: capitalize;
+    opacity: .3;
+    margin-bottom: .3rem;
+}
+
+.date--numbers{
+    display: flex;
+    font-size: 4rem;
+    gap: .5rem;
+}
+
+.mes, .dia{
+    background: var(--cor__5);
+    border-radius: 2rem;
+    color: var(--cor__letra);
+    width: 50%;
+    height: 10rem;
+    display: grid;
+    align-items: center; justify-content: center;
+    box-shadow: 0 0 .5rem rgb(0 0 0 / .6);
+}
