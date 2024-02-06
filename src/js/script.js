@@ -58,8 +58,8 @@ const calendarioTempoReal = setInterval(() =>{
         'Agosto',
         'Setembro',
         'Outubro',
-       ' Novembro',
-       ' Dezembro'
+        'Novembro',
+        'Dezembro'
     ]
 
 
