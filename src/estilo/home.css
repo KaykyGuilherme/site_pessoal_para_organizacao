@@ -14,6 +14,15 @@
     
 }
 
+.headline__left{
+    display: flex;
+    gap: 3rem;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .relogio{
     background: var(--cor__5);
     opacity: .9;
@@ -49,6 +58,7 @@
     display: flex;
     flex-flow: wrap;
     align-items: center; justify-content: center;
+    gap: 4rem;
 }
 
 .container__date{
@@ -79,4 +89,140 @@
     display: grid;
     align-items: center; justify-content: center;
     box-shadow: 0 0 .5rem rgb(0 0 0 / .6);
+}
+
+.container__weather{
+    width: 17rem;
+    background: transparent;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem .2rem rgb(0 0 0 / .4);
+    overflow: hidden;
+    background: url('../img/ceus/ceu__limpo.gif') 
+    no-repeat 
+    center/cover;
+    border: 1px solid rgb(255 255 255 / .1);
+    box-shadow: 0 .5rem 3rem rgb(0 0 0 / .6);
+}
+
+.box__weather{
+    background: linear-gradient(transparent, var(--cor__5));
+    width: 100%; height: 100%;
+    display: flexbox;
+
+}
+
+.weather__top{
+    height: 25%; width: 92%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; align-items: center;
+    gap: 1rem;
+    --background__trasparent: rgb(255 255 255 / .1);
+    color: var(--cor__letra);
+    border-bottom: 1px solid var(--cor__letra);
+    margin: 0 auto;
+}
+
+.weather__top input{
+    border: none;
+    border-radius: .5rem;
+    width: 70%; height: 2.3rem;
+    background: var(--background__trasparent);
+    padding: 1rem;
+    color: var(--cor__letra);
+    font-size: 1.1rem;
+}
+
+.weather__top button{
+    border: none;
+    height: 2.3rem; width: 2.3rem;
+    border-radius: 50%;
+    background: var(--background__trasparent);
+    color: var(--cor__letra);
+    cursor: pointer;
+}
+
+.weather__bottom{
+    padding-top: 1rem;
+    width: 100%; height: 100%;
+    color: #eee;
+
+}
+
+.infos__name__city{
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: .4rem;
+    
+}
+
+.infos__name__city h3{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.infos__name__city img{
+    height: 1.5rem;
+}
+
+.infos__estado__do__tempo{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center; justify-content: center; 
+}
+
+.infos__estado__do__tempo .graus{
+    font-size: 3rem;
+}
+
+.estado__tempo{
+    display: flex;
+    align-items: center; justify-content: center;
+    text-transform: capitalize;
+}
+
+.estado__tempo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.bottom__vento__agua{
+    display: flex;
+    width: 100%;
+    padding: 1rem 3rem;
+    justify-content: space-between; align-items: center;
+}
+
+.agua{
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: .3rem;
+}
+
+.agua i{
+    font-size: .8rem;
+}
+
+.vento{
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: .3rem;
+}
+
+.agua i{
+    font-size: .8rem;
+}
+
+.weather404{
+    display: grid;
+    align-items: center; justify-content: center;
+}
+
+.weather404 img{
+    width: 13rem; height: 13rem;
+}
+
+.weather__hide{
+    display: none;
 }
