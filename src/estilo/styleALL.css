@@ -51,3 +51,11 @@ main{
 a{
     text-decoration: none;
 }
+
+::-webkit-scrollbar{
+    background: var(--cor__5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--cor__3);
+}
