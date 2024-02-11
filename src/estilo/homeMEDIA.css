@@ -1,0 +1,38 @@
+@media screen and (min-width: 626px) {
+    .caixa__de__texto{
+        height: 3.5rem;
+    }
+
+    .active__sobre__mim{
+        
+        height: 19rem;
+    }
+}
+
+@media screen and (min-width: 1181px) {
+    .headline__infos{
+        margin-top: 10rem;
+        display: flex;
+        flex-flow: nowrap;
+        align-items: start; justify-content: space-around;
+    }
+
+    .headline__left{
+        width: 30%;
+    }
+
+    .headline__right{
+        width: 60%;
+    }
+    
+    .redes__sociais{
+        width: auto;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .container__cards{
+        display: flex;
+        flex-flow: wrap row;
+    }
+}

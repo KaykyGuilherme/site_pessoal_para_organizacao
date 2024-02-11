@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="src/estilo/styleALL.css">
     <link rel="stylesheet" href="src/estilo/style.css">
     <link rel="stylesheet" href="src/estilo/home.css">
+    <link rel="stylesheet" href="src/estilo/homeMEDIA.css">
     <!--======================= JS =======================-->
-    <script src="src/js/script.js" defer></script>
+    <script src="src/js/scriptHOME.js" defer></script>
+    <script src="src/js/scriptALL.js" defer></script>
     <title>Kayky G | Home</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
             <div class="nav__menu__mobile"></div>
             <nav class="nav__list">
 
-                <li class="nav__item nav__active">
+                <li class="nav__item  nav__active">
                     <img class="nav__item--emoji" src="src/img/home/emojis/pipa.png" alt="[ERRO] emoji não carregado">
                     <img class="nav__item--emoji" src="src/img/home/emojis/olho__do__mal__olhado.png" alt="[ERRO] emoji não carregado">
                     <img class="nav__item--emoji" src="src/img/home/emojis/bone.png" alt="[ERRO] emoji não carregado">
@@ -40,7 +42,7 @@
                     <img  class="nav__item--emoji" src="src/img/estudos/emojis/bola__de__cristao.png" alt="[ERRO] emoji não carregado">
                     <img  class="nav__item--emoji" src="src/img/estudos/emojis/unicornio.png" alt="[ERRO] emoji não carregado">
                     <div class="nav__item__container">
-                        <a href="#">
+                        <a href="paginas/estudos.html">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -55,7 +57,7 @@
                     <img  class="nav__item--emoji" src="src/img/academia/emojis/trofeu.png" alt="[ERRO] emoji não carregado">
                     <img  class="nav__item--emoji" src="src/img/academia/emojis/braço__forte.png" alt="[ERRO] emoji não carregado">
                     <div class="nav__item__container">
-                        <a href="#">
+                        <a href="paginas/academia.html">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -97,6 +99,39 @@
                 </div>
                 <div class="minha__foto"></div>
             </div>
+
+            <div class="headline__sobre__mim">
+                <h1 class="nome">Kayky guilherme</h1>
+                <div class="caixa__de__texto active__sobre__mim">
+                    <i class="fa-solid fa-caret-up i__fechar__abrir"></i>
+                    <p>
+                        Olá, seja bem vindo o meu site que fala um pouco sobre mim
+                    </p>
+                    <div class="quem__sou__eu">
+                        <h2>e quem sou eu?</h2>
+                        <ul class="list__sobre__mim">
+                            <div class="linha">
+                                <div class="bola__linha"></div>
+                                <div class="bola__linha"></div>
+
+                            </div>
+                            <li>
+                                <p>&#129299; sou um universario apaixonado pela programação e meu curso é ciência da computação</p>
+                            </li>
+                            <li>
+                                <p>&#127881; Eu tenho 20 anos e faço aniversario em 14/08</p>
+                            </li>
+                            <li>
+                                <p>&#9749;&#65039; Nos meus tempo livre eu gosto de cozinhar e fazer academia</p>
+                            </li>
+                            <li>
+                                <p>&#129293; E amo criar sites e jogos</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="headline__infos">
 
@@ -171,8 +206,89 @@
                     <div class="redes__sociais">
                         <div class="container__sociais">
                             <h2>redes sociais</h2>
+                            <div class="container__cards">
+                                <div class="card">
+                                    <div class="card3D">
+                                        <div class="card3D__header">
+                                            <div class="avatar__name">
+                                                <img src="https://letrasjuridicas.com.br/product_images/AuthorDefaultImage.png" alt="">
+                                                <h3>k1kayky</h3>
+                                            </div>
+                                        </div>
+                                        <div class="infos">
+                                            <p class="seguidores">
+                                                30 seguidores
+                                            </p>
+                                            <p class="seguindo">
+                                                25 seguindo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card__hidden">
+                                        <img src="src/img/home/redes__social/instagram__3d.webp" alt="">
+                                        <button class="btn__seguir">
+                                            <a href="https://www.instagram.com/k1kayky/" target="_blank">
+                                                seguir
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card discord">
+                                    <div class="card3D">
+                                        <div class="card3D__header">
+                                            <div class="avatar__name">
+                                                <img src="https://letrasjuridicas.com.br/product_images/AuthorDefaultImage.png" alt="">
+                                                <h3>k1kayky</h3>
+
+                                            </div>
+                                        </div>
+                                        <div class="infos">
+                                            <h4>kayky#0069</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card__hidden">
+                                        <img src="src/img/home/redes__social/discord__3d.webp" alt="">
+                                        <button class="btn__seguir">
+                                            <a href="#" target="_blank">
+                                                Entrar no serve
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card github">
+                                    <div class="card3D">
+                                        <div class="card3D__header">
+                                            <div class="avatar__name">
+                                                <img src="https://letrasjuridicas.com.br/product_images/AuthorDefaultImage.png" alt="">
+                                                <h3>KaykyGuilherme</h3>
+                                            </div>
+                                        </div>
+                                        <div class="infos">
+                                            <p class="seguidores">
+                                                5 seguidores
+                                            </p>
+                                            <p class="seguindo">
+                                                4 seguindo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card__hidden ">
+                                        <img src="src/img/home/redes__social/github__3d.webp" alt="">
+                                        <button class="btn__seguir">
+                                            <a href="https://github.com/KaykyGuilherme" target="_blank">
+                                                seguir
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
            

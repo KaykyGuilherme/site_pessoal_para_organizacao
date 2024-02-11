@@ -44,6 +44,10 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    padding: 1rem;
+}
+
 a{
     text-decoration: none;
 }

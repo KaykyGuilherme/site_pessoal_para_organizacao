@@ -1,30 +1,3 @@
-//Menu Mobile
-const navALL = {
-    nav: document.querySelector('nav'),
-    menuMobile: document.querySelector('.nav__menu__mobile'),
-
-}
-const tempoHTML = document.querySelector(".tempo")
-
-navALL.menuMobile.addEventListener('click', () =>{
-    navALL.nav.classList.toggle('active')
-})
-
-let dayAll
-
-//=================================================
-//Relogio
-const relogioTempoReal = setInterval( () =>{
-    dayAll = new Date();
-
-    let horas = dayAll.getHours()
-    let minutos = dayAll.getMinutes()
-
-    if(horas < 10) horas = '0' + horas
-    if(minutos < 10) minutos = '0' + minutos
-
-    tempoHTML.textContent = `${horas}:${minutos}`
-})
 
 //=================================================
 //calendario
@@ -106,16 +79,22 @@ const cardWeather = {
 }
 
 cardWeather.btn.addEventListener('click', () =>{
+    if(cardWeather.cidyHTML.value == ''){
+        return
+    }
     pegarWeatherAPI(cardWeather.cidyHTML.value)
 })
 
 cardWeather.cidyHTML.addEventListener('keyup', (evento) =>{
     if(evento.key == 'Enter'){
-        pegarWeatherAPI(cardWeather.cidyHTML.value)
+        if(cardWeather.cidyHTML.value == ''){
+            return
+        }
+            pegarWeatherAPI(cardWeather.cidyHTML.value)
     }
 })
 
-const pegarWeatherAPI = async (cidy) =>{
+const pegarWeatherAPI = async (cidy ) =>{
 
     const apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${cidy}&units=metric&&appid=${keyWeather}&lang=pt_br`
 
@@ -153,3 +132,12 @@ const mudarCard = (data) =>{
 }
 
 pegarWeatherAPI('franca')
+
+//=================================================
+//fechar chat e abrir
+const caixa__de__texto = document.querySelector('.caixa__de__texto')
+const chatToggle = document.querySelector('.i__fechar__abrir')
+
+chatToggle.addEventListener('click', () =>{
+    caixa__de__texto.classList.toggle('active__sobre__mim')
+})
