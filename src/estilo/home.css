@@ -333,27 +333,31 @@
     border: 1px solid var(--cor__letra);
     padding: 1rem 5rem;
     box-shadow: 0 0 .5rem rgb(0 0 0 / .8);
+    overflow: hidden;
 }
 
 .container__sociais{
     display: flex;
     flex-flow: column nowrap;
     align-content: center; justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%; height: 100%;
-    overflow: hidden;
-
 }
 
 .container__sociais h2{
     text-align: center;
     text-transform: uppercase;
     color: var(--cor__letra);
+    margin: 0 auto;
+    border-bottom: 1px solid var(--cor__1);
+    width: 15rem;
+
 }
 
 .container__cards{
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center; justify-content: center;
     gap: 2rem;
 }
@@ -368,7 +372,6 @@
     width: 100%; height: 100%;
     background: var(--cor__letra);
     border-radius: 1rem;
-    overflow: hidden;
     transition: transform .3s;
     box-shadow: 0 0 1rem rgb(0 0 0 / 1);
     position: relative;
@@ -539,20 +542,107 @@
     color: var(--cor__letra);
 }
 
-@media (hover: none){
-    .card .card3D{
-    transform: perspective(1500px) rotateX(20deg);
-    box-shadow: 0 1rem 1rem rgb(0 0 0 / 1);
-    border: 1px solid rgb(112, 112, 112);
+.jogos{
+    margin:1rem 0;
+    border: 1px solid var(--cor__letra);
+    padding: 1rem 5rem;
+    box-shadow: 0 0 .5rem rgb(0 0 0 / .8);
 }
 
-.card ,.card3D::after{
-    opacity: 1;
+.container__jogos h2{
+    text-align: center;
+    color: var(--cor__letra);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--cor__1);
+    width: 15rem;
+    margin: 0 auto 2.5rem auto;
 }
 
-.card .card__hidden{
-    bottom: -15%;
-    opacity: 1;
+.container__cards__jogos{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center; justify-content: center;
+    gap: 2rem;
+    width: 100%; height: 100%;
 }
 
+.card__jogo{
+    width: 15rem;
+    height: 20rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 1);
+    cursor: pointer;
+}
+
+.card__jogo h3{
+    color: var(--cor__letra);
+    text-transform: uppercase;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-shadow: 0 0 1rem rgb(0 0 0 / 1);
+    z-index: 2;
+}
+
+
+.card__jogo .card__face1{
+    height: 100%; width: 100%;
+    background: url(../img/home/jogos/valorant__background.gif)
+    no-repeat
+    center/cover;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card__face1 .card__face2{
+    background: linear-gradient(rgb(0 0 0 / .6), black);
+    height: 100%; width: 100%;
+    transform: translateY(100%);
+    display: grid;
+    align-items: end;
+    transition: .2s;
+}
+
+.infos__jogo{
+    width: 100%;
+    color: var(--cor__letra);
+    padding-bottom: 3rem;
+}
+
+.nome__game{
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: .3rem;
+    padding: 1rem;
+}
+
+.nome__game img{
+    width: 2rem;
+}
+
+.nome__game p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card__face1:hover .card__face2{
+    transform: translateY(0);
+}
+
+.lol .card__face1{
+    background: url('../img/home/jogos/league__of__legends__background.gif')
+    no-repeat
+    center/cover;
+}
+
+.lol h3{
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.overwatch .card__face1{
+    background-image: url('../img/home/jogos/overwatch.gif');
 }
