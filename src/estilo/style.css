@@ -313,3 +313,11 @@ nav{
     }
 
 }
+
+footer{
+    text-align: center;
+    color: var(--cor__letra);  
+    padding: .5rem 0;
+    opacity: .2;
+    text-transform: capitalize;  
+}
