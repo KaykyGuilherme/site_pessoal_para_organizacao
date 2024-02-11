@@ -32,7 +32,6 @@
 
 @media screen and (min-width: 1184px) {
     .headline__infos{
-        margin-top: 10rem;
         display: flex;
         flex-flow: nowrap;
         align-items: start; justify-content: space-around;
