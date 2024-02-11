@@ -373,6 +373,8 @@
     box-shadow: 0 0 1rem rgb(0 0 0 / 1);
     position: relative;
     overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .card3D::after{
