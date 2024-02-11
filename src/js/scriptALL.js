@@ -32,7 +32,6 @@ const AllOberservador = document.querySelectorAll('.oberservado')
 
 const oberservador = new IntersectionObserver((elemento) =>{
     elemento.forEach((elemento2) =>{
-        console.log(elemento2)
         if(elemento2.isIntersecting){
             elemento2.target.classList.add('visto')
         }
@@ -40,3 +39,21 @@ const oberservador = new IntersectionObserver((elemento) =>{
 })
  
 AllOberservador.forEach((elemento) => oberservador.observe(elemento))
+
+//=================================================
+//maquina de escrever
+
+const textEscreverHTML = document.querySelector('.escrever')
+
+const maquinaDeEscrever = (texto) =>{
+    const textoSeparado = texto.textContent.split('')
+    texto.textContent = ''
+    
+    textoSeparado.forEach((letra, numero) =>{
+        setTimeout(() =>{
+            texto.textContent += letra
+        }, 75 * numero)
+    })
+}
+
+maquinaDeEscrever(textEscreverHTML)

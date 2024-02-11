@@ -69,3 +69,19 @@ a{
     transform: translateX(0);
     opacity: 1;
 }
+
+.escrever::after{
+    content: "|";
+    margin-left: .5rem;
+    animation: piscar .7s infinite;
+}
+
+@keyframes piscar {
+    0%, 25%, 50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
