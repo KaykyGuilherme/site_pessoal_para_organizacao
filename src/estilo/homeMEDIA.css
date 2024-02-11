@@ -13,6 +13,10 @@
     bottom: -15%;
     opacity: 1;
 }
+
+.card__face1 .card__face2{
+    transform: translateY(0);
+}
 }
 
 @media screen and (min-width: 626px) {
