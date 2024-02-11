@@ -594,6 +594,7 @@
     center/cover;
     border-radius: 1rem;
     overflow: hidden;
+    outline: 1px solid rgba(153, 153, 153, 0.3);
 }
 
 .card__face1 .card__face2{

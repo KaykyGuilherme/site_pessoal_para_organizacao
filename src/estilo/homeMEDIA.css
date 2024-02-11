@@ -1,6 +1,6 @@
 @media (hover: none){
     .card .card3D{
-    transform: perspective(1500px) rotateX(20deg);
+    transform: perspective(1500px) rotateX(40deg);
     box-shadow: 0 1rem 1rem rgb(0 0 0 / 1);
     border: 1px solid rgb(112, 112, 112);
 }

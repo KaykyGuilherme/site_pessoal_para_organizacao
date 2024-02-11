@@ -25,3 +25,18 @@ const relogioTempoReal = setInterval( () =>{
 
     tempoHTML.textContent = `${horas}:${minutos}`
 })
+
+//=================================================
+//oberservador
+const AllOberservador = document.querySelectorAll('.oberservado')
+
+const oberservador = new IntersectionObserver((elemento) =>{
+    elemento.forEach((elemento2) =>{
+        console.log(elemento2)
+        if(elemento2.isIntersecting){
+            elemento2.target.classList.add('visto')
+        }
+    })
+})
+ 
+AllOberservador.forEach((elemento) => oberservador.observe(elemento))

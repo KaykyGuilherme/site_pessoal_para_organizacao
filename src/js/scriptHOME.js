@@ -105,7 +105,6 @@ const pegarWeatherAPI = async (cidy ) =>{
 }
 
 const mudarCard = (data) =>{
-    console.log(data)
     if(data.cod == '404'){
         cardWeather.cardBottom.classList.add('weather__hide')
         cardWeather.erro404.classList.remove('weather__hide')
